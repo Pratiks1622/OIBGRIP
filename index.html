@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wood | thewood.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1300px)" href="css/phone.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Bree+Serif&display=swap"
+        rel="stylesheet">
+        
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="MyOnlineMeal.com">
+        </div>
+
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">The Wood - Interior Design Studio</h1>
+        <p>Experience unmatched quality & timely delivery with Livspace</p>
+        <button class="btn"><a href="#contact" class="main">Enquire Now</a></button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="img/2.jpg" alt="">
+                <h2 class="h-secondary center">RESIDENTIAL DESIGN</h2>
+                <p class="center">The Wood presents you beautiful and modern houses, amazing buildings and stunning architecture structures born from the creativity and imagination of the best architects and designers in the world. The eye can enjoy a virtual tour of the most attractive homes in the world of indoor and outdoor presentations, of some of the most amazing residential projects and more.</p>
+            </div>
+            <div class="box">
+                <img src="img/1.jpg" alt="">
+                <h2 class="h-secondary center">OFFICE DESIGN</h2>
+                <p class="center">We spend most of our time at work and it is desirable that this place to be warm, attractive and simulative. The home office must be comfortable and hospitable as well, a place where passion and joy can be found in the ongoing activities. For all these, The Wood has a display in the OFFICE category that contains the latest achievements not only of world famous designers but also of young ones full of enthusiasm and creativity. </p>
+
+            </div>
+            <div class="box">
+                <img src="img/3.jpg" alt="">
+                <h2 class="h-secondary center">COMMERCIAL DESIGN</h2>
+                <p class="center">Our Commercial interior designers plan public spaces—government buildings, private businesses, or other corporate entities. Offices are a common focus of these professionals, but we also work with schools, banks, retail establishments, and other public spaces. Commercial interior design plays a pivotal role in the success of any business </p>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <section id="contact">
+        <div class="container">
+            <div style="text-align:center">
+                <h1 class="h-primary center">Contact Us</h1>
+              <p>Swing by for a cup of coffee, or leave us a message:</p>
+            </div>
+            <div class="row">
+              <div class="column">
+                <!-- <img src="/contact.jpg" style="width:100%">
+                 -->
+                 <div id="googleMap" style="width:100%;height:400px;"></div>
+              </div>
+              <div class="column">
+                <form action="/action_page.php">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">India</option>
+                  </select>
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div>
+          
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.thewood.com All rights reserved.
+        </div>
+    </footer>
+</body>
+
+
+    <script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+
+</html>
